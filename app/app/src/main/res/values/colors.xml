@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="arkaplan_renk1">#e6e6fa</color>
+    <color name="uygulama_ismi1_rengi">#AAFFAA</color>
+    <color name="btn_uye_girisi">#B107E1</color>
+    <color name="txtColorPrimary">#FFFFFF</color>
+    <color name="arkaplan_renk2">#F0EDF1</color>
+    <color name="arkaplan_renk3">#E3E1E6</color>
+    <color name="arkaplan_turuncu">#85FFC107</color>
+    <color name="txtkirikbeyaz">#A6FFFFFF</color>
+    <color name="baslik_renk">#9C27B0</color>
+    <color name="lila">#F3DEF6</color>
+    <color name="murdum">#9C27B0</color>
+    <color name="btn_turuncu">#FFC107</color>
+    <color name="edittext_renk">#F7F0F8</color>
+    <color name="fiyat_color">#FF9800</color>
+    <color name="yenirenk">#b7ddb5</color>
+    <color name="yenirenk2">#bf9cbe</color>
+    <color name="yenirenk3">#becdd6</color>
+</resources>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ShowAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/txtColorPrimary</item>
+        <item name="android:background">@color/btn_uye_girisi</item>
+        <item name="android:textColorPrimary">@color/txtColorPrimary</item>
+        <item name="android:textColor">@color/txtColorPrimary</item>
+    </style>
+
+</resources>
+

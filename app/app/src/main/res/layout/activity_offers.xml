@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yenirenk3"
+    tools:context=".offers">
+
+    <include layout="@layout/actionbar_app"
+        android:id="@+id/actionbar_offer"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar_offer"/>
+
+    <Button
+        android:id="@+id/offer_ekle"
+        android:layout_width="@dimen/seksendp"
+        android:layout_height="@dimen/seksendp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/ucyuzdp"
+        android:layout_marginEnd="@dimen/ucyuzdp"
+        android:layout_marginBottom="@dimen/ellidp"
+        android:gravity="center_vertical"
+        android:background="@drawable/ekle"
+        android:onClick="offerEkle"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/kirkdp" />
+
+
+</RelativeLayout>

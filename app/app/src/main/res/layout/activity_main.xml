@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HosgeldinActivity"
+    android:background="@color/yenirenk3">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/ikiyuzdp"
+        android:layout_height="@dimen/ikiyuzdp"
+        android:layout_marginTop="@dimen/yirmidp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="@dimen/ucyuzotuzdortdp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:textAlignment="center"
+        android:text="@string/uygulama_giris1"
+        android:textColor="@color/uygulama_ismi1_rengi"
+        android:textSize="@dimen/ellidp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/uyeGiris"
+        android:layout_width="@dimen/ucyuzellidp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/uye_girisi"
+        android:layout_above="@+id/kayitOl"
+        android:layout_marginBottom="@dimen/yirmidp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/yirmibesdp"
+        />
+    <Button
+        android:id="@+id/kayitOl"
+        android:layout_width="@dimen/ucyuzellidp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/seksendp"
+        android:text="@string/kayit_ol"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/yirmibesdp"
+        />
+
+</RelativeLayout>

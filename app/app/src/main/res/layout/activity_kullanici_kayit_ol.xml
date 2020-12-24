@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yenirenk3"
+    tools:context=".KullaniciKayitOlActivity">
+
+    <include layout="@layout/actionbar_app"
+        android:id="@+id/actionbarKayit"/>
+
+    <TextView
+        android:id="@+id/txtViewUyeGirisi"
+        android:layout_width="@dimen/ikiyuzdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogo"
+        android:layout_marginStart="@dimen/yuzellidp"
+        android:layout_marginTop="@dimen/yedidp"
+        android:text="@string/txtuyegirisiyap"
+        android:textColor="@color/btn_uye_girisi" />
+
+    <TextView
+
+        android:id="@+id/soru"
+        android:layout_width="@dimen/yuzotuzdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogo"
+        android:layout_marginLeft="@dimen/otuzdp"
+        android:layout_marginTop="@dimen/yedidp"
+        android:text="@string/uye_misin"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/yetmisbesdp"
+        android:layout_height="@dimen/yetmisbesdp"
+        android:layout_below="@+id/actionbarKayit"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginTop="@dimen/onbesdp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="@dimen/ucyuzotuzdortdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbarKayit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/ondp"
+        android:layout_marginTop="@dimen/yirmidp"
+        android:layout_toRightOf="@+id/logo"
+        android:text="@string/app"
+        android:textColor="@color/uygulama_ismi1_rengi"
+        android:textSize="@dimen/ellidp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dortyuzatmisdokuzdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/yuzdoksansekizdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/Ad"
+                android:layout_width="@dimen/yuzyetmisdp"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border3"
+                android:hint="@string/ad"
+                android:inputType="text"
+                android:paddingLeft="@dimen/onbesdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmibesdp" />
+
+            <EditText
+                android:id="@+id/Soyad"
+                android:layout_width="@dimen/yuzyetmisdp"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/ikiyuzyirmidp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border3"
+                android:hint="@string/soyad"
+                android:inputType="text"
+                android:paddingLeft="@dimen/onbesdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmibesdp" />
+
+            <EditText
+                android:id="@+id/Telefon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_below="@+id/Soyad"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/kirkbesdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border3"
+                android:hint="@string/cep_telefonu"
+                android:inputType="number"
+                android:paddingLeft="@dimen/onbesdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmibesdp" />
+
+            <TextView
+                android:id="@+id/hataTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/kirkdp"
+                android:layout_below="@+id/Telefon"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/besdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/onbesdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_below="@+id/hataTelefon"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border3"
+                android:enabled="false" />
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="@dimen/ikiyuzelli"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_below="@id/hataTelefon"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:hint="@string/email2"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/onbesdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmibesdp"/>
+
+            <TextView
+                android:layout_width="@dimen/yuzdp"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_below="@+id/hataTelefon"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:layout_toRightOf="@+id/Email"
+                android:gravity="center"
+                android:text="@string/gmail" />
+
+            <TextView
+                android:id="@+id/hataEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/kirkdp"
+                android:layout_below="@+id/Email"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/besdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/onbesdp" />
+
+            <EditText
+                android:id="@+id/Sifre1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_below="@id/hataEmail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border3"
+                android:hint="@string/sifre"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/onbesdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmibesdp" />
+
+            <EditText
+                android:id="@+id/Sifre2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ellibesdp"
+                android:layout_below="@id/hataSifre"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border3"
+                android:hint="@string/sifretekrar"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/onbesdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmibesdp" />
+
+            <TextView
+                android:id="@+id/hataSifre"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/kirkdp"
+                android:layout_below="@+id/Sifre1"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/besdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="@dimen/onbesdp" />
+
+            <TextView
+                android:id="@+id/bosluk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/yuzdp"
+                android:layout_below="@+id/Sifre2"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/besdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/uyelikOlustur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ondp"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginTop="@dimen/yirmidp"
+        android:layout_marginEnd="@dimen/otuzdp"
+        android:background="@drawable/button"
+        android:onClick="kaydet"
+        android:text="@string/uyelik_olustur"
+        android:textSize="@dimen/yirmidp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

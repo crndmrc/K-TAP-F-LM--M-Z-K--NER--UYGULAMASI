@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".offer_ozellikleri"
+    android:background="@color/yenirenk3">
+    <include layout="@layout/actionbar_app"
+        android:id="@+id/actionbarOfferOzellikleri"/>
+
+    <EditText
+        android:id="@+id/baslik"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ellidp"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginEnd="@dimen/otuzdp"
+        android:background="@drawable/border5"
+        android:hint="@string/baslik_girin"
+        android:paddingLeft="@dimen/onbesdp"
+        android:textSize="@dimen/otuzdp"
+        android:textColor="@color/btn_uye_girisi"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/actionbarOfferOzellikleri"
+        android:layout_marginTop="@dimen/yirmidp"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ikiyuzatmisyedidp"
+        android:layout_below="@+id/baslik"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/onucdp"
+        android:layout_marginEnd="@dimen/onucdp"
+        android:layout_marginBottom="@dimen/yetmisbesdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/resimEkle"
+                android:layout_width="@dimen/yuzellidp"
+                android:layout_height="@dimen/yuzellidp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:onClick="resimSec"
+                android:src="@drawable/resimekle" />
+
+            <TextView
+                android:id="@+id/txtOfferTipi"
+                android:layout_width="@dimen/yuzatmisdp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/resimEkle"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:background="@drawable/border5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/onbesdp"
+                android:text="@string/offer_tipi"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmidp" />
+
+            <Spinner
+                android:id="@+id/spinnerOfferTipi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@id/resimEkle"
+                android:layout_marginStart="@dimen/yirmidp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:layout_marginEnd="@dimen/yirmidp"
+                android:layout_toRightOf="@+id/txtOfferTipi" />
+
+
+            <TextView
+                android:id="@+id/txttur"
+                android:layout_width="@dimen/yuzatmisdp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/txtOfferTipi"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:background="@drawable/border5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/onbesdp"
+                android:text="@string/tur"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmidp" />
+
+            <Spinner
+                android:id="@+id/spinnerTur"
+                android:layout_width="@dimen/yuzatmisdp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/txtOfferTipi"
+                android:layout_marginStart="@dimen/yirmidp"
+                android:layout_marginEnd="@dimen/yirmidp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:layout_toRightOf="@+id/txttur" />
+
+            <TextView
+                android:id="@+id/txtOneri"
+                android:layout_width="@dimen/yuzatmisdp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/txttur"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:background="@drawable/border5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/onbesdp"
+                android:text="@string/oneri"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmidp" />
+
+            <Spinner
+                android:id="@+id/spinnerOneri"
+                android:layout_width="@dimen/yuzatmisdp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/txttur"
+                android:layout_marginStart="@dimen/yirmidp"
+                android:layout_marginEnd="@dimen/yirmidp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:layout_toRightOf="@+id/txtOneri" />
+
+            <TextView
+                android:id="@+id/txtcikisYil"
+                android:layout_width="@dimen/yuzatmisdp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/txtOneri"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:background="@drawable/border5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/onbesdp"
+                android:text="@string/cikis_yili"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmidp" />
+
+            <EditText
+                android:id="@+id/edtYil"
+                android:layout_width="@dimen/yuzatmisdp"
+                android:layout_height="@dimen/ellidp"
+                android:background="@drawable/border3"
+                android:paddingLeft="@dimen/onbesdp"
+                android:layout_below="@+id/txtOneri"
+                android:layout_marginStart="@dimen/yirmidp"
+                android:layout_marginEnd="@dimen/yirmidp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:layout_toRightOf="@+id/txtOneri"
+                android:hint="@string/cikis_yil"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/onucdp" />
+
+            <TextView
+                android:id="@+id/txtNot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/edtYil"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/onyedidp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border5"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/onbesdp"
+                android:text="@string/not"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/yirmidp" />
+
+            <Spinner
+                android:id="@+id/spinnerfilm"
+                android:layout_width="@dimen/yuzellidp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/txtNot"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:layout_marginTop="@dimen/yirmidp" />
+
+            <Spinner
+                android:id="@+id/spinnerkitap"
+                android:layout_width="@dimen/yuzellidp"
+                android:layout_height="@dimen/ellidp"
+                android:layout_below="@+id/txtNot"
+                android:layout_marginStart="@dimen/yirmidp"
+                android:layout_marginTop="@dimen/yirmidp"
+                android:layout_marginEnd="@dimen/yirmidp"
+                android:layout_marginBottom="@dimen/otuzdp"
+                android:layout_toRightOf="@+id/spinnerfilm" />
+
+            <EditText
+                android:id="@+id/knot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seksendp"
+                android:layout_below="@+id/spinnerkitap"
+                android:hint="@string/k_not"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="@dimen/otuzdp"
+                android:layout_marginEnd="@dimen/otuzdp"
+                android:background="@drawable/border3"
+                android:paddingLeft="@dimen/onbesdp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnOfferEkle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ellidp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginEnd="@dimen/otuzdp"
+        android:layout_marginBottom="@dimen/yirmidp"
+        android:background="@drawable/btn_kaydet"
+        android:text="@string/offer_ekle"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:onClick="offerEkle"
+        />
+
+</RelativeLayout>

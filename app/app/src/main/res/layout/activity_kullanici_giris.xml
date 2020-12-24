@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yenirenk3"
+    tools:context=".KullaniciGirisActivity">
+
+    <include layout="@layout/actionbar_app"
+        android:id="@+id/actionbarGiris"/>
+
+
+    <TextView
+        android:id="@+id/txtViewUyeGirisi"
+        android:layout_width="@dimen/ikiyuzdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogo"
+        android:layout_marginStart="@dimen/yuzellidp"
+        android:layout_marginTop="@dimen/yedidp"
+        android:text="@string/kayitol"
+        android:onClick="kayitOl"
+        android:textColor="@color/btn_uye_girisi" />
+
+    <TextView
+
+        android:id="@+id/soru"
+        android:layout_width="@dimen/yuzotuzdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLogo"
+        android:layout_marginLeft="@dimen/otuzdp"
+        android:layout_marginTop="@dimen/yedidp"
+        android:text="@string/uye_degil_misin"
+        android:textColor="@android:color/black" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/yetmisbesdp"
+        android:layout_height="@dimen/yetmisbesdp"
+        android:layout_below="@+id/actionbarGiris"
+        android:layout_marginStart="@dimen/kirkdp"
+        android:layout_marginTop="@dimen/otuzbesdp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="@dimen/ucyuzotuzdortdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbarGiris"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/ondp"
+        android:layout_marginTop="@dimen/kirkdp"
+        android:layout_toRightOf="@+id/logo"
+        android:text="@string/app"
+        android:textColor="@color/uygulama_ismi1_rengi"
+        android:textSize="@dimen/ellidp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ellibesdp"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="@dimen/ellidp"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginEnd="@dimen/otuzdp"
+        android:enabled="false"
+        android:background="@drawable/border3"
+        />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="@dimen/ikiyuzkirkaltidp"
+        android:layout_height="@dimen/ellibesdp"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginTop="@dimen/ellidp"
+        android:paddingLeft="@dimen/onbesdp"
+        android:hint="@string/hintemail"
+        android:inputType="textEmailAddress"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/otuzdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="@dimen/ellidp"
+        android:layout_toRightOf="@+id/edtEmail"
+        android:layout_marginEnd="@dimen/otuzdp"
+        android:paddingLeft="@dimen/ucdp"
+        android:layout_height="@dimen/ellibesdp"
+        android:text="@string/gmail"
+        android:gravity="center"
+        android:textSize="@dimen/onyedidp"
+        />
+    <EditText
+        android:id="@+id/edtSifre"
+        android:layout_width="@dimen/ucyuzelliiki"
+        android:layout_height="@dimen/ellibesdp"
+        android:layout_below="@+id/edtEmail"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginTop="@dimen/otuzdp"
+        android:layout_marginEnd="@dimen/otuzdp"
+        android:background="@drawable/border3"
+        android:paddingLeft="@dimen/onbesdp"
+        android:hint="@string/hintsifre"
+        android:inputType="textPassword"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/otuzdp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSifre"
+        android:layout_marginStart="@dimen/otuzdp"
+        android:layout_marginTop="@dimen/otuzdp"
+        android:layout_marginEnd="@dimen/otuzdp"
+        android:background="@drawable/button"
+        android:onClick="girisYap"
+        android:text="@string/txtgirisyap"
+        android:textSize="@dimen/yirmibesdp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

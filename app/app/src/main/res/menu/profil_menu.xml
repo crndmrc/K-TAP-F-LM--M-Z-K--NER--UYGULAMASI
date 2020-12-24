@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_ara"
+        android:icon="@drawable/filtreleme_iconu"
+        android:orderInCategory="200"
+        android:title="@string/filtrele"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView"></item>
+
+    <item
+        android:id="@+id/action_profil"
+        android:orderInCategory="300"
+        android:title="@string/profil_toolbar"
+        android:icon="@drawable/profil4"
+        app:showAsAction="ifRoom"></item>
+</menu>

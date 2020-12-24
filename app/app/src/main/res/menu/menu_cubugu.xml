@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_remove"
+        android:orderInCategory="200"
+        android:title="@string/sil_toolbar"
+        android:icon="@drawable/sil1"
+        app:showAsAction="ifRoom"></item>
+
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="200"
+        android:title="@string/duzenle_toolbar"
+        android:icon="@drawable/duzenle1"
+        app:showAsAction="ifRoom"></item>
+
+    <item android:id="@+id/cik_item" android:title="@string/oturumu_kapat">
+    </item>
+</menu>
